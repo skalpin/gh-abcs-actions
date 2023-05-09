@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.2
-      - run: Get-ChildItem
+      - run: Get-ChildItem | % { $_.FullName }
         shell: pwsh
   fanout1:
     runs-on: ubuntu-latest
