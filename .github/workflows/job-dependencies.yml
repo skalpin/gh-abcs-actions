@@ -16,6 +16,7 @@ jobs:
     container: mcr.microsoft.com/powershell
     steps:
       - run: Get-ChildItem
+        shell: pwsh
   fanout1:
     runs-on: ubuntu-latest
     needs: initial
