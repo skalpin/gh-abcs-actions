@@ -16,7 +16,7 @@ jobs:
     container: mcr.microsoft.com/powershell
     steps:
       - name: Checkout
-        uses: actions/checkout@3.5.2
+        uses: actions/checkout@v3.5.2
       - run: Get-ChildItem
         shell: pwsh
   fanout1:
